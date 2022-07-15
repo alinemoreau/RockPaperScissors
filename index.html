@@ -1,0 +1,79 @@
+<!-- You should build the full functionality of the game with a fully incorporated front end to display the move that user picked and the move the computer picked. As is standard with most  games of RPS, this should be best two out of 3, meaning the user will play 3 times each time keeping track of the number of wins and losses for either the computer, the player, or both in order to determine the winner. 
+Requirements: 
+Play game button on the page that will start the game.
+RPS selection from both the player and computer displayed for each round of the game.
+A message to the user stating wether they won or lost
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div class="tracking">
+            <div class="tracker">
+                Wins:
+                <div id="win-tracker">0</div>
+            </div>
+    
+            <div class="tracker">
+                Losses:
+                <div id="loss-tracker">0</div>
+            </div>
+        </div>
+    
+        <h1>Rock, Paper, Scissors, Shoot!</h1>
+    </header>
+    
+
+    <div class="play-text" id="play">
+        PLAY
+    </div>
+
+    <div class="score-board">
+        <div class="player" id="user">
+            You
+            <div id="user-score"> 0 </div>
+        </div>
+        <div class="player" id="computer">
+            Computer
+            <div id="computer-score"> 0 </div>
+        </div>
+    </div>
+
+    <div class="result">
+        <p>Make your choice :)</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="images" id="r">
+            <img src ="rock.png" alt="rock" width="100" >
+        </div>
+    
+        <div class="images" id="p">
+            <img src ="paper.png" alt="paper" width="100">
+        </div>
+    
+        <div class="images" id="s">
+            <img src ="scissors.png" alt="scissors" width="100">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
